@@ -1,0 +1,27 @@
+<button id="btn">Click</button>
+<ng-container *ngIf="flag">
+    <p>primero works!</p>
+</ng-container>
+
+<ng-container *ngFor="let pais of paises; let i = index;">
+    <p>Index: {{i}}</p>
+    <p id="pais-{{i}}">Id: {{pais.id}}</p>
+    <h3>Pais: {{pais.nombre}}</h3>
+</ng-container>
+
+<!-- <ng-container *ngFor="let item of platillos">
+    <div [ngSwitch]="item.pais">
+        <div *ngSwitchCase="PAISES.MEXICO">México: {{item.platillo}}</div>
+        <div *ngSwitchCase="PAISES.JAPON">Japon: {{item.platillo}}</div>
+        <div *ngSwitchCase="PAISES.RUSIA">Rusia: {{item.platillo}}</div>
+        <div *ngSwitchDefault>No definido</div>
+    </div>
+</ng-container> -->
+
+<h2 appColor [color]="'red'" [size]="'30px'" [fontStyle]="'arial'" [dynamicColor]="'blue'">Hola</h2>
+<h2 appColor [color]="'blue'" [size]="'15px'" [fontStyle]="'italic'">Hola mundo</h2>
+
+
+<input type="text" value="as" #div>
+<h1 id="texto" #texto>Cualquier elemento</h1>
+
